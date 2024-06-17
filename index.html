@@ -119,6 +119,12 @@
                 transform: rotate(360deg);
             }
         }
+
+        .d-flex-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -141,6 +147,39 @@
             <div class="mb-3">
                 <label for="address" class="form-label">Địa chỉ:</label>
                 <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <label for="address" class="form-label">Sản phẩm:</label>
+            <br>
+            <div class="mb-3 d-flex-between">
+                <div>
+                    <input class="form-check-input" type="checkbox" id="ez365" name="ez365">
+                    <label class="form-check-label" for="ez365">Ez365</label>                   
+                </div>
+                <div>
+                    <label for="quantity" class="form-check-label">Số lượng(hộp):</label>
+                    <input type="number" class="form-control d-inline-block" id="quantity" name="ez365-quantity" style="width: 100px;">
+                </div>
+            </div>
+            <div class="mb-3 d-flex-between">
+                <div>
+                    <input class="form-check-input" type="checkbox" id="ez365" name="ezdd365">
+                    <label class="form-check-label" for="ez365">EzDD365</label>            
+                </div>
+                <div>
+                    <label for="quantity" class="form-check-label">Số lượng(hộp):</label>
+                    <input type="number" class="form-control d-inline-block" id="quantity" name="ezdd365-quantity" style="width: 100px;">           
+                </div>
+            </div>
+            <div class="mb-3 d-flex-between">
+                <div>
+                    <input class="form-check-input" type="checkbox" id="ez365" name="eztp365">
+                    <label class="form-check-label" for="ez365">EzTP365</label>
+                    
+                </div>
+                <div>
+                    <label for="quantity" class="form-check-label">Số lượng(hộp):</label>
+                    <input type="number" class="form-control d-inline-block" id="quantity" name="eztp365-quantity" style="width: 100px;">
+                </div>
             </div>
             <br>
             <div class="d-flex justify-content-center">
